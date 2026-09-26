@@ -26,8 +26,16 @@ Haan, bilkul sahi samjha aapne — agar claude/fix-tests branch ka kaam theek la
 Event-driven — jaise doorbell, jab tak kuch hota nahi kuch chalta nahi. PR khule, message aaye, alert fire ho — tabhi reaction. Teen routes: GitHub events → Routine, chat message → Channel (isko live session chahiye, machine on honi zaroori), kuch bhi aur (API request) → Routine with API trigger.
 **Real-world example:** Aap ek open-source project maintain karte hain. Jab bhi koi contributor pull request khole, GitHub event trigger hota hai aur Routine khud PR ko review kar ke comment kar deta hai — "yeh function test nahi ho raha" ya "code style theek hai". Koi bhi is PR ko kabhi na kholay, to Routine kabhi chalega hi nahi — bilkul doorbell ki tarah, sirf tab bajta hai jab koi button dabaye.
 /////////////////////////////////////////////////////////Loop ki body
+**********************************Isolation (worktrees)
 ek loop ek se zyada agents ek sath chalata hai. Agar dono agent ek hi project ki files pe kaam kar rahe hon, to ek ka kaam dusre ka kaam overwrite kar sakta hai.
 Iska hal: har agent ko apni alag copy-book de do — apna alag folder, jahan sirf wo likh raha hai. Isko kehte hain worktree. Yeh ek separate working folder hai, apni branch pe, lekin same project ki history share karta hai. Ek agent ka kaam dusre ke folder ko chhoo bhi nahi sakta.
+sal masla yeh hai ke ek agent ka kaam dusre ka kaam mita ya bigaad sakta hai. Jaise agar dono ek hi file edit kar rahe hon, ek agent ki changes dusre ki changes ke upar likhi ja sakti hain, aur dono ka kaam kharab ho sakta hai.
+**********************************Knowledge (skills)
+har baar loop chalta hai to wo fresh session hota hai — usay tumhare project ki aadatein yaad nahi hoti. Bina help ke, wo har baar guess karta hai ya dobara pooch-taach karta hai, jo time aur tokens dono waste karta hai. Iska hal: ek skill — ek file (SKILL.md) jisme yeh sab likh diya jata hai, aur agent har run pe usay padh leta hai.
+**********************************Action (connectors)
+Agar loop bhi sirf files padh sakta hai, to wo sirf bata sakta hai — "yeh fix kar do." Wo khud PR khol nahi sakta, Slack pe message nahi bhej sakta, database update nahi kar sakta.
+Connectors (MCP pe bane hue) yeh cheez badalte hain. Yeh loop ko karne dete hain — PR kholna, ticket update karna, Slack pe post karna. Farq yeh hai: ek loop jo sirf kehta hai "yeh fix hai," aur ek loop jo khud PR khol deta hai, ticket link kar deta hai, aur channel pe post kar deta hai — jab CI green ho jaye.
+
 
 
 
