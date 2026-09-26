@@ -43,7 +43,8 @@ Isko maker-checker ya LLM-as-judge kehte hain.
 ke sab kaam (worktree banana, skill padhna, connector se action, maker-checker se check) ek dafa ek script mein likh dena, taake agli baar sirf "yeh workflow chalao" bolna kaafi ho.
 Zaroori baat: yeh workflow **ek dafa chal kar khatam ho jata hai aur bhool jata hai** — yeh sirf loop ka **body** hai, poora loop nahi.
 Poora loop = **Heartbeat** (shuru karta hai) + **Workflow** (body, yehi hai) + **Progress file** (spine, jo yaad rakhta hai).
-Chahogi ab Part 4 (Spine) pe wapas jayein?
+////////////////////////////////////////////////////////Verification skills
+Ak agent say checking ka kam kis trhn krwana hy y Is check ko bhi ek skill mein likh diya ja sakta hai (jaisa Concept 9 mein seekha), taake agent khud yeh check kar sake, tumhe har baar khud dekhne ki zaroorat na pade.
 
 
 
