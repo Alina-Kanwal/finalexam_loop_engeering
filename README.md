@@ -45,6 +45,18 @@ Zaroori baat: yeh workflow **ek dafa chal kar khatam ho jata hai aur bhool jata 
 Poora loop = **Heartbeat** (shuru karta hai) + **Workflow** (body, yehi hai) + **Progress file** (spine, jo yaad rakhta hai).
 ////////////////////////////////////////////////////////Verification skills
 Ak agent say checking ka kam kis trhn krwana hy y Is check ko bhi ek skill mein likh diya ja sakta hai (jaisa Concept 9 mein seekha), taake agent khud yeh check kar sake, tumhe har baar khud dekhne ki zaroorat na pade.
+******************************************************Four parts
+Standalone — Yeh skill kisi aur cheez se judi nahi. Tum khud, jab jee chahe, bologe "yeh check chalao." Jaise tumhare paas ek separate button ho jo sirf tum dabao.
+Embedded — Yeh skill kisi dusri skill ke andar fit ho jati hai. Jaise: koi skill code likhti hai, aur uske khatam hote hi, yeh check khud-ba-khud chal jata hai — bina tumhe alag se bolna pade. "Code likha → turant check bhi ho gaya."
+Chained — Ek skill dusri skill ko khud call karti hai. Jaise: pehli skill kehti hai "mera kaam khatam, ab tum (dusri skill) chalo." Ek chain ban jati hai — A khatam → B shuru → B khatam → C shuru.
+Every PR — Yeh sabse bada "ghar" hai: poori team ke liye. Jab bhi koi (chahe koi bhi ho) code submit kare (PR banaye), yeh check automatically chal jaye — har waqt, sab ke liye, koi bhi bhoole nahi.
+/////////////////////////////////////////////////////////Spine
+Yaad hai spine (Concept 12) ki baat ki thi — ke loop ko yaad rakhne ke liye disk pe kuch save karna padta hai? Asal mein spine do hisso mein bant'ta hai, do alag files:
+1. Rules file (CLAUDE.md ya AGENTS.md)
+Yeh wo file hai jisme hamesha ke liye kaam aane wali habits aur seekhein likhi jaati hain. Jaise: "hum yeh coding style follow karte hain," "yeh galti dobara mat karna." Yeh file har single run ke shuru mein padhi jaati hai — chahe kaam kuch bhi ho.
+2. Progress file (progress.md)
+Yeh wo file hai jisme roz ka status likha jata hai: "aaj yeh kaam kiya, yeh abhi baaki hai." Yeh roz badalti rehti hai.
+Us intern wali example se yaad karo: rules file diary ke front mein likhi hui hamesha wali seekhein hain, aur progress file diary ke back mein likha roz ka update hai.
 
 
 
