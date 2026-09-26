@@ -36,7 +36,15 @@ har baar loop chalta hai to wo fresh session hota hai — usay tumhare project k
 Agar loop bhi sirf files padh sakta hai, to wo sirf bata sakta hai — "yeh fix kar do." Wo khud PR khol nahi sakta, Slack pe message nahi bhej sakta, database update nahi kar sakta.
 Connectors (MCP pe bane hue) yeh cheez badalte hain. Yeh loop ko karne dete hain — PR kholna, ticket update karna, Slack pe post karna. Farq yeh hai: ek loop jo sirf kehta hai "yeh fix hai," aur ek loop jo khud PR khol deta hai, ticket link kar deta hai, aur channel pe post kar deta hai — jab CI green ho jaye.
 Ek chhoti si extra baat is concept ki: jab loop khud actions leta hai, to 3 cheezein zaroori ho jaati hain — (1) kam aur focused tools do, warna model confuse ho jata hai; (2) wo action safe-to-repeat ho (retry pe duplicate na bane, jaise dobara "create customer" se do customer na ban jayein); (3) error message clear ho, taake agla try khud theek ho sake.
-**********************************
+*********************************Maker-checker (subagents)
+Bilkul yehi masla hoti hai jab ek agent apna hi kaam check kare — wo apne aap ko bohot aasani se "pass" de deta hai. Isliye loop mein rule hai: jo agent kaam karta hai, wo hi usay approve nahi karega. Ek dusra agent (kabhi alag model bhi) us kaam ko check karta hai.
+Isko maker-checker ya LLM-as-judge kehte hain.
+**********************************Dynamic workflows**
+ke sab kaam (worktree banana, skill padhna, connector se action, maker-checker se check) ek dafa ek script mein likh dena, taake agli baar sirf "yeh workflow chalao" bolna kaafi ho.
+Zaroori baat: yeh workflow **ek dafa chal kar khatam ho jata hai aur bhool jata hai** — yeh sirf loop ka **body** hai, poora loop nahi.
+Poora loop = **Heartbeat** (shuru karta hai) + **Workflow** (body, yehi hai) + **Progress file** (spine, jo yaad rakhta hai).
+Chahogi ab Part 4 (Spine) pe wapas jayein?
+
 
 
 
