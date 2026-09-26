@@ -25,6 +25,10 @@ Haan, bilkul sahi samjha aapne — agar claude/fix-tests branch ka kaam theek la
 /////////////////////////////////////////. Event-driven
 Event-driven — jaise doorbell, jab tak kuch hota nahi kuch chalta nahi. PR khule, message aaye, alert fire ho — tabhi reaction. Teen routes: GitHub events → Routine, chat message → Channel (isko live session chahiye, machine on honi zaroori), kuch bhi aur (API request) → Routine with API trigger.
 **Real-world example:** Aap ek open-source project maintain karte hain. Jab bhi koi contributor pull request khole, GitHub event trigger hota hai aur Routine khud PR ko review kar ke comment kar deta hai — "yeh function test nahi ho raha" ya "code style theek hai". Koi bhi is PR ko kabhi na kholay, to Routine kabhi chalega hi nahi — bilkul doorbell ki tarah, sirf tab bajta hai jab koi button dabaye.
+/////////////////////////////////////////////////////////Loop ki body
+ek loop ek se zyada agents ek sath chalata hai. Agar dono agent ek hi project ki files pe kaam kar rahe hon, to ek ka kaam dusre ka kaam overwrite kar sakta hai.
+Iska hal: har agent ko apni alag copy-book de do — apna alag folder, jahan sirf wo likh raha hai. Isko kehte hain worktree. Yeh ek separate working folder hai, apni branch pe, lekin same project ki history share karta hai. Ek agent ka kaam dusre ke folder ko chhoo bhi nahi sakta.
+
 
 
 
