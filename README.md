@@ -57,12 +57,13 @@ Yeh wo file hai jisme hamesha ke liye kaam aane wali habits aur seekhein likhi j
 2. Progress file (progress.md)
 Yeh wo file hai jisme roz ka status likha jata hai: "aaj yeh kaam kiya, yeh abhi baaki hai." Yeh roz badalti rehti hai.
 Us intern wali example se yaad karo: rules file diary ke front mein likhi hui hamesha wali seekhein hain, aur progress file diary ke back mein likha roz ka update hai.
-//////////////////////////////////////////////////////Concept — Teen feedback loops, teen speed Keeping Human Control
+//////////////////////////////////////////////////////Concept — Teen feedback loops, teen speed ,Keeping Human Control
 Socho tum ek bacchay ke liye ek typing game bana rahi ho:
 Coding loop (minutes mein) — agent khud code likhta hai, test karta hai, bug fix karta hai — yeh wahi loop hai jo humne ab tak seekha.
 Feedback loop (hours mein) — tum khud game khol kar dekhti ho, decide karti ho "buttons bade karo," phir agent ko naya instruction deti ho.
 Outside loop (din mein) — asli log (jaise wo bacha) game use karte hain, aur unka react karna tumhe batata hai agla kya badalna hai.
 Yeh teeno ek dusre ke andar rehte hain — chhota loop (coding) bade loop (feedback) ke andar chalta hai, aur wo dono sabse bade (outside) ke andar.
+///////////////////////////////////////////////////
 
 
 
