@@ -63,7 +63,13 @@ Coding loop (minutes mein) — agent khud code likhta hai, test karta hai, bug f
 Feedback loop (hours mein) — tum khud game khol kar dekhti ho, decide karti ho "buttons bade karo," phir agent ko naya instruction deti ho.
 Outside loop (din mein) — asli log (jaise wo bacha) game use karte hain, aur unka react karna tumhe batata hai agla kya badalna hai.
 Yeh teeno ek dusre ke andar rehte hain — chhota loop (coding) bade loop (feedback) ke andar chalta hai, aur wo dono sabse bade (outside) ke andar.
-///////////////////////////////////////////////////
+///////////////////////////////////////////////////Token cost hi asal limit hai
+Loop ke sath bilkul yehi hota hai: loop kitni martaba chalta hai, yehi uski cost decide karta hai — command ka naam ya kaam ka size nahi. Ek example: agar loop din mein 5 dafa chale, to mahine ka kharcha kaafi kam (~$20) ho sakta hai. Wahi loop agar har 5 minute mein chale, to kharcha 100 guna zyada ($1000+) ho sakta hai — jabke kaam wahi hai.
+Isay control karne ke tareeqe:
+Har loop pe limit lagao (max tries, max time, max paisa)
+Chhote kaam ke liye sasta model, mushkil check ke liye behtar model use karo
+Loop ka prompt aur rules file chhota rakho — yeh har run pe cost hota hai
+Loop ko kam baar chalao (jaisa zaroorat ho, na ke bar bar)
 
 
 
