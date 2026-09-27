@@ -70,6 +70,11 @@ Har loop pe limit lagao (max tries, max time, max paisa)
 Chhote kaam ke liye sasta model, mushkil check ke liye behtar model use karo
 Loop ka prompt aur rules file chhota rakho — yeh har run pe cost hota hai
 Loop ko kam baar chalao (jaisa zaroorat ho, na ke bar bar)
+//////////////////////////////////////////////////Kaam check karna abhi bhi tumhara zimma hai
+"Trust the loop to do the work" — loop pe bharosa karo ke wo kaam kar sake, code likh sake, test chala sake. Usay kaam karne do.
+"Check the work before it counts" — lekin jab tak tum khud dekh kar confirm nahi karti ke kaam waqai sahi hai, tab tak usay "final" ya "done" mat samjho. Matlab: kaam sirf tab "count" hota hai — yani asal mein maana jata hai ke ho gaya — jab tumne khud check kar liya, sirf loop ke "PASS" bolne se nahi.
+Simple example: socho loop ne code likha, checker ne bola "PASS," aur PR (pull request) ban gaya. Lekin agar tum yeh PR bina padhe seedha merge kar do (main project mein daal do), to yeh "count" ho gaya bina tumhare check kiye — jo risky hai. Sahi tareeqa: PR ko khud padho, dekho theek hai, phir merge karo — tabhi wo kaam "count" hota hai, asal mein complete mana jata hai.
+To short mein: loop kaam kare, lekin final mohar tumhari honi chahiye, checker ki nahi.
 
 
 
