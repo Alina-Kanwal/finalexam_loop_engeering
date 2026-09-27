@@ -81,6 +81,12 @@ To short mein: loop kaam kare, lekin final mohar tumhari honi chahiye, checker k
 - **On the loop** → System khud kaam karta hai, insaan sirf dekhta hai, rok sakta hai. (Fast, zyada autonomy)
 - **Out of the loop** → Koi nahi dekh raha, koi rok nahi sakta. **Hamesha galat.**
 **Yaad rakhne wali baat:** Accha loop dono ka **mix** hota hai — safe kaam on-the-loop, risky kaam in-the-loop. Aur "on the loop" agar check karna band kar do, to chupke se **out-of-the-loop** ban jata hai.
+//////////////////////////////////////////////////Apna project samajhna band mat karo
+Loop jitna tez kaam karta hai, utna gap badhta hai: loop kya ship kar raha hai vs tum kitna samajhti ho. Isay AI gravity kehte hain — sab kuch dheere-dheere AI pe chhod dene ka pull.
+Iska ilaaj simple hai: har hafte thoda waqt nikaal kar padho ke loop ne kya-kya badla/ship kiya. Isse:
+Tumhe pata rehta hai project mein asal mein kya ho raha hai
+Tum galti jaldi pakad loti ho, badi banne se pehle
+Tum "engineer" rehti ho, sirf "button dabane wali" nahi
 
 
 
