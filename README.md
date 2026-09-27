@@ -86,7 +86,7 @@ Loop jitna tez kaam karta hai, utna gap badhta hai: loop kya ship kar raha hai v
 Iska ilaaj simple hai: har hafte thoda waqt nikaal kar padho ke loop ne kya-kya badla/ship kiya. Isse:
 Tumhe pata rehta hai project mein asal mein kya ho raha hai
 Tum galti jaldi pakad loti ho, badi banne se pehle
-Tum "engineer" rehti ho, sirf "button dabane wali" nahi........
+Tum "engineer" rehti ho, sirf "button dabane wali" nahi...
 
 
 
